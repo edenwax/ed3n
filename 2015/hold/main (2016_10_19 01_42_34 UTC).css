@@ -1,0 +1,25 @@
+html, body {
+	background: #263248;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+	font-family: "Roboto", sans-serif;
+	/* 400,300,100,500,700,900 */
+	letter-spacing: 1;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #7E8AA2;
+}
+#wrap {
+	width: 695px;
+	margin: 0 auto;
+}
+	#logo {
+		margin: 250px 0 50px 0;
+	}
+	#coming-soon {
+		text-align: center;
+	}
+		#coming-soon h2 {
+			color: #E3E3E3;
+		}

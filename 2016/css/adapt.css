@@ -1,0 +1,129 @@
+/* adapt.css */
+
+@media screen and (orientation:portrait){
+	#header-wrap {
+		background-image: none;
+	}
+	#mvbg { /* stupid mobile browser work around */
+		display: inherit;
+		position: fixed; 
+		top: 0; 
+		left: 0; 
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;		
+	}
+	header, header.sticky {
+		line-height: none;
+		height: auto;
+		height: 64px;
+		line-height: 64px;
+	}
+	header.sticky {
+		height: 30px;
+		line-height: 30px;
+	}
+	#logo, header.sticky #logo {
+		width: 100%;
+		display: block;
+		text-align: center;
+		float: none;
+	}
+		#logo p, header.sticky #logo p {
+			padding: 0;
+			margin: 0;
+		}
+			header.sticky #logo p {
+				color: #373737;
+				font-size: 1em;
+			}
+	nav, header.sticky nav {
+		display: none;
+	}
+	#head-center {
+		padding-top: 35%;
+	}
+		#head-center h1 {
+			font-size: 2em;
+			padding-bottom: 45%;
+		}
+	#bottom-nav {
+		display: initial;
+		background: #fff;
+		border-radius: 10px 10px 0 0;
+		height: 48px;
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+		border-top: 1px solid #1fd660;
+	}
+			#bottom-nav a {
+				color: #939393;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: .6em;
+				text-align: center;
+				width: 25%;
+				height: 100%;
+				display: inline-block;
+				float: left;
+			}
+				#bottom-nav i {
+					padding-top: 3px;
+					color: #1fd660;
+				}
+				#bottom-nav a:hover, #bottom-nav a:active {
+					background: #1fd660;
+					color: #fff;
+				}
+					#bottom-nav a:hover i, #bottom-nav a:active i {
+						color: #fff;
+					}
+					#bottom-nav a:first-child:hover {
+						border-radius: 10px 0 0 0;
+					}
+					#bottom-nav a:last-child:hover {
+						border-radius: 0px 10px 0 0;
+					}
+#about-me {
+	width: 100%;
+	height: auto;
+	background-image: none; /* might as well unload this if it aint bein used*/
+	background: #1fd660;
+}
+	#about-first {
+		display: none;
+	}
+	#about-second {
+		float: none;
+		width: 100%;
+		background: url(../img/me.png) no-repeat center top;
+		background-size: cover;
+	}
+		#about-second div {
+			max-width: 100%;
+			padding: 40px;
+		}
+			#about-second h1 {
+				font-size: 2em;
+				color: #fff;
+			}
+			#about-second h6 {
+				text-transform: uppercase;
+				color: #99f9bb;
+			}
+			#about-second div p {
+				text-align: justify;
+				padding: 0;
+				color: #fff;
+				width: 100%;
+				margin: 20px 0 0 0;
+			}
+}
+
+@media only screen and (max-width: 1279px;){
+		#head-center h1 {
+			padding: 22% 0 5% 0;
+		}
+}

@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteRule ^$ index.php?p=
+RewriteRule ^portfolio$ index.php?p=portfolio
+RewriteRule ^cyanima$ index.php?p=cyanima
+RewriteRule ^ed3nme$ index.php?p=ed3nme
+RewriteRule ^shockline$ index.php?p=shockline
+RewriteRule ^orb$ index.php?p=orb
+RewriteRule ^radiant$ index.php?p=radiant
+RewriteRule ^dotbu$ index.php?p=dotbu
+RewriteRule ^sog$ index.php?p=sog
+RewriteRule ^contact$ index.php?p=contact

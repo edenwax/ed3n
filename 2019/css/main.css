@@ -1,0 +1,411 @@
+/* main.css */
+
+/* 
+	background    #101C28
+*/
+
+html, body {
+	background: #101C28 url(../img/pattern.png);
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+}
+a {
+	text-decoration: none;
+}
+
+/* colours */
+.pink { color: #F80652; }
+.light-blue { color: #ADC4D6; }
+
+/* sizes */
+.size-600 { font-weight: 600; }
+.size-800 { font-weight: 800; }
+
+#page-wrap {
+	width: 100%;
+}
+	header {
+		width: 100%;
+		position: fixed;
+		z-index: 999;
+	}
+		header.header-bg-off {
+			background: none;
+			padding: 2em 0;
+			transition: all .2s ease-in-out;
+		}
+		header.header-bg-on {
+			background: #101C28;
+			margin: 0;
+			padding: 0.7em 0;
+			transition: all .2s ease-in-out;
+		}
+	div.header-wrap {
+		max-width: 1140px;
+		margin: 0 auto;
+		display: flex;
+	}
+		div.header-logo {
+			margin: 3px 0 0 0;
+		}
+		div.header-logo, div.header-nav {
+			width: 50%;
+		}
+			div.header-logo h1 {
+				color: #E8F1F8;
+				font-size: 1.6em;
+				margin: 5px 0 0 0;
+				padding: 0;
+			}
+			div.header-nav ul {
+				float: right;
+			}
+			div.header-nav li {
+				list-style-type: none;
+				float: left;
+			}
+				div.header-nav li a {
+					margin: 0 25px 0 25px;
+					color: #ADC4D6;
+					font-weight: 800;
+					letter-spacing: 2px;
+					padding: 0 0 5px 0;
+					border-bottom: 3px solid rgba(0,0,0,0);
+					transition: all .2s ease-in-out;
+				}
+				div.header-nav li a:hover {
+					color: #E8F1F8;
+					border-bottom: 3px solid #F80652;
+				}
+			div.header-nav li.contact a {
+				padding: 8px 15px;
+				background: #c6134b;
+				color: #E8F1F8;
+				border-radius: 5px;
+				border: none;
+				margin: 0 0 0 25px;
+			}
+				div.header-nav li.contact a:hover {
+					background: #af1344;
+					color: #fefefe;
+					border: none;
+				}
+	main {
+		width: 100%;
+		padding: 200px 0 0 0;
+	}
+		section.slogan {
+			font-size: 2em;
+			color: #E8F1F8;
+			height: 400px;
+		}
+			section.slogan h1 {
+				font-weight: 300;
+  				background: -webkit-linear-gradient(#F80652, #ADC4D6);
+  				-webkit-background-clip: text;
+  				-webkit-text-fill-color: transparent;
+  				max-width: 940px;
+			}
+		section.slogan div {
+			max-width: 1140px;
+			margin: 0 auto;
+		}
+		section.about {
+			background: #222F3F;
+		}
+			div.about-wrap {
+				max-width: 1140px;
+				margin: 2em auto;
+				display: flex;
+				justify-content: space-between;
+			}
+				div.about-column {
+					width: 30%;
+					margin: 0 0 4em 0;
+				}
+					div.about-column h2 {
+						font-size: 2em;
+						margin: 0;
+						padding: 2em 0 0.3em 0;
+						font-weight: 600;
+						color: #E8F1F8;
+					}
+					div.about-column .line, div.about-personal .line, div.work-title .line, div.contact-wrap .line {
+						height: 5px;
+						width: 75px;
+						background: #ec1b5d;
+					}
+					div.contact-wrap .line {
+						background: #fff;
+					}
+					div.about-column p {
+						color: #ADC4D6;
+						line-height: 1.5em;
+					}
+			div.about-me {
+				min-height: 400px;
+				max-width: 1140px;
+				margin: 0 auto;
+				display: flex;
+			}
+				div.about-me div.about-img {
+					width: 30%;
+				}
+					div.about-me div.about-img img {
+						width: 100%;
+						height: auto;
+						border-radius: 999px;
+					}
+				div.about-me div.about-personal {
+					padding: 4em 2em 2em 2em;
+					width: 70%;
+				}
+					div.about-me div.about-personal p {
+						margin: 0;
+						padding: 0.5em 0 0 0;
+						line-height: 1.7em;
+						color: #ADC4D6;
+					}
+					div.about-me div.about-personal h3 {
+						color: #E8F1F8;
+						font-size: 1.8em;
+						font-weight: 600;
+						padding: 0 0 0.3em 0;
+						margin: 0;
+					}
+
+		section.work {
+			min-height: 400px;
+			background: #ADC4D6;
+			padding: 3em 0;
+		}
+			section.work div.work-title {
+				margin: 0 0 2em 0;
+				display: flex;
+			}
+				section.work div.work-title .left, section.work div.work-title .right {
+					width: 50%;
+				}
+				section.work div.work-title .right {
+					text-align: right;
+				}
+				section.work div.work-title h2, .contact-wrap h2 {
+					font-size: 2em;
+					font-weight: 600;
+					margin: 0;
+					padding: 0 0 0.2em 0;
+					color: #101c28;
+				}
+			section.work div.work-wrap {
+				width: 1140px;
+				margin: 0 auto;
+			}
+				section.work div.card-wrap {
+					margin: 1em 0;
+				}
+				div.card-row {
+					margin: 1em 0 3em 0;
+					display: flex;
+					justify-content: space-between;
+				}
+				section.work div.card {
+					width: 30%;
+				}
+				section.work div.card-img {
+					margin: 0 0 -6px 0;
+				}
+					section.work div.card img {
+						width: 100%;
+						height: auto;
+						margin: 0;
+						padding: 0;
+						border-radius: 5px 5px 0 0;
+					}
+				section.work div.card-dsc {
+					padding: 1em;
+					background: #E8F1F8;
+					border-radius: 0 0 5px 5px;
+				}
+					section.work div.card-title {
+						font-size: 1.4em;
+						font-weight: 800;
+					}
+						section.work div.card-title span {
+							font-weight: 400;
+						}
+					section.work div.card-text {
+						padding: 1em 0 0 0;
+					}
+					section.work div.card-link {
+						margin: 1em 0 0 0;
+						text-align: center;
+					}
+						section.work div.card-link a {
+							border: 1px solid #ec1b5d;
+							color: #ec1b5d;
+							font-weight: 900;
+							padding: 10px 15px;
+							display: block;
+							border-radius: 3px;
+							transition: all .2s ease-in-out;
+						}
+							section.work div.card-link a:hover {
+								background: #ec1b5d;
+								color: #fff;
+							}
+			section.work div.work-link {
+				text-align: center;
+				margin: 0 0 2em 0;
+			}
+				section.work div.work-title .right {
+					padding: 1em 0 0 0;
+				}
+				section.work div.work-link a, section.work div.work-title .right a {
+					padding: 12px 20px;
+					background: #c6134b;
+					color: #E8F1F8;
+					border: none;
+					border-radius: 5px;
+					transition: all .2s ease-in-out;
+				}
+					section.work div.work-link a i, section.work div.work-title .right a i {
+						margin: 2px 0 0 12px;
+						position: relative;
+						transition: all .2s ease-in-out;
+					}
+					section.work div.work-link a:hover, section.work div.work-title .right a:hover {
+						background: #af1344;
+						color: #fefefe;
+					}
+					section.work div.work-link a:hover i, section.work div.work-title .right a:hover i {
+						margin: 0 0 0 20px;
+					}
+		section.contact {
+			/* background: #c6134b; */
+			background: #c6134b; /* Old browsers */
+			background: -moz-linear-gradient(45deg, #c6134b 0%, #222f3f 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg, #c6134b 0%,#222f3f 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg, #c6134b 0%,#222f3f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6134b', endColorstr='#222f3f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			padding: 2em 0 3em 0;
+		}
+			section.contact div.contact-wrap {
+				max-width: 1140px;
+				margin: 0 auto;
+			}
+			.contact-wrap {
+				padding: 2em 0 0 0;
+			}
+			.contact-wrap h2 {
+				color: #E8F1F8;
+			}
+				.contact-wrap .line {
+					margin: 0 0 3em 0;
+					background: #fff;
+				}
+				section.contact div.contact-options {
+					display: flex;
+					justify-content: space-between;
+				}
+					.contact-form-wrap {
+						width: 100%;
+						display: flex;
+					}
+						.contact-form, .contact-social {
+							width: 45%;
+						}
+							.contact-form li input, .contact-form li textarea {
+								width: 100%;
+							}
+							.contact-form li, .contact-form ul {
+								margin: 0;
+								padding: 0;
+								width: 100%;
+								list-style-type: none;
+							}
+							.contact-form .left {
+								width: 30%;
+							}
+							.contact-form .right {
+								width: 70%;
+							}
+							.contact-form li {
+								min-height: 75px;
+							}
+								.contact-form li label {
+									font-weight: 800;
+									font-size: 1.2em;
+									color: #f6adc4;
+								}
+								.contact-form li input, .contact-form li textarea {
+									padding: 10px 0 10px 10px;
+									border: 0;
+									outline: 0;
+									background: none;
+									font-size: 1em;
+									border: 2px solid #f6adc4;
+									border-radius: 3px;
+									color: #fff;
+									transition: all .2s ease-in-out;
+								}
+									.contact-form textarea {
+										resize: vertical;
+									}
+									.contact-form li input:hover, .contact-form li textarea:hover {
+										border: 2px solid #fff;
+									}
+									.contact-form li input:focus, .contact-form li textarea:focus {
+										border: 2px solid #fff;
+										background: #fff;
+										color: #c6134b;
+										box-shadow: rgba(0,0,0,0.2) 0 0 5px;
+									}
+								.contact-form button {
+									background: #E8F1F8;
+									color: #c6134b;
+									font-size: 1em;
+									font-weight: 800;
+									font-family: "Nunito", sans-serif;
+									text-transform: uppercase;
+									margin: 1.5em 0;
+									padding: 10px 20px;
+									border: none;
+									border-radius: 5px;
+									cursor: pointer;
+								}
+									.contact-form button i {
+										margin: 0 0 0 15px;
+										transition: all .2s ease-in-out;
+									}
+										.contact-form button:hover {
+											background: #fff;
+										}
+										.contact-form button:hover i {
+											margin: 0 0 0 20px;
+										}
+			.contact-social {
+				text-align: center;
+			}
+				.contact-social a {
+					font-size: 2em;
+					margin: 0 15px;
+					color: rgba(255,255,255,.8);
+				}
+					.contact-social a:hover {
+						color: #fff;
+					}
+				.contact-social-title {
+					text-align: center;
+					text-transform: uppercase;
+					color: rgba(255,255,255,.8);
+					font-weight: 800;
+					font-size: 1.4em;
+					margin: 0 0 1em 0;
+					letter-spacing: 5px;
+				}
+				.contact-social .line {
+					margin: 1em auto;
+				}

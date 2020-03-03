@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Dearest source-reader,
+            Welcome to some of the code used on this website. I'd love to know if you see anything that requires tweaking. It's always helpful to have a second set of eyes!
+
+            If you find anything you can shoot me an email at me[at]ed3n[d0t]me
+
+            I would really appreciate it!
+        -->
+        <meta charset="utf-8">
+        <title>Colin Berry | ed3n.me</title>
+        <meta name="description" content="Personal Portfolio of Colin Berry">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- So. Many. Stylesheets. -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/adapt.css">
+        <link rel="stylesheet" href="css/sanitize-min.css">
+
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/favicon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <script src="js/jquery-2.2.0.min.js"></script>
+        <script src="js/typed.js"></script>
+    </head>
+    <body>
+        <!-- stupid mobile browser cover fix -->
+            <img src="img/treebg.jpg" id="mvbg" alt="" />
+        <!-- end -->
+        <div id="page-wrap">
+            <div id="header-wrap">
+                <header>
+                    <div id="logo">
+                        <p>COLIN<span>BERRY</span></p>
+                    </div>
+                    <nav>
+                        <a href="">Home</a>
+                        <a href="#about-me">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </header>
+                <div id="head-center">
+                    <h1><span class="headtext"></span></h1>
+                    <img src="img/mouse.png" alt="scroll down!" />
+                </div>
+            </div>
+            <div id="about-me">
+                <div id="about-first">
+                </div>
+                <div id="about-second">
+                    <div>
+                        <h1>About Myself</h1>
+                        <p>Hey so I'm Colin Berry - a web designing, video gaming, music writing and technical support..ing individual. I currently reside in Nanaimo, BC Canada.</p>
+
+                        <p>I've been designing and building websites for the better part of a decade on and off. While I've never been employed as a full time web designer or developer, I have worked with various local businesses designing and building websites, logos and various other assets.</p>
+
+                        <p>This very website was designed by and, well.. mostly coded all by me! Admittedly I had a bit of help from the ever-so-wonderful people at Google, Unspash, and this one guy Matt Boldt for his truly excellent typed.js jQuery plugin.</p>
+
+                        <p>I like to use SublimeText3, Firefox, Photoshop + Illustrator, and XAMPP for my work. </p>
+                        <h6>Whatever that means.</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects">
+                <div id="project-wrap">
+                    <h2>Recent Projects</h2>
+                    <div class="project">
+                        <div class="project-img-left">
+                            <img src="img/ed3_ios.png" />
+                        </div>
+                        <div class="project-text-right">
+                            <h1>ed3n.me <span class="project-thin">(2017)</span></h1>
+                            <p>Woah isnt this the very site you're viewing right now?</p> <br />
+
+                            <p>Inspired by Spotify's colour palette, I built this site to try out some one-page web design. I thought I'd see what happened with my spin on it.</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-text-left">
+                            <h1>ed3n.me <span class="project-thin">(2016)</span></h1>
+                            <p>Last years site was inspired by a random color palette I found online.</p> <br />
+
+                            <p>I designed this site to build a consistent user experience, packed as much information into it as I could and all while trying to keep it clean and simple.</p>  
+                        </div>
+                        <div class="project-img-right">
+                            <img src="img/ed3_mac.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1>Look Im still buildin' this site okay?</h1>
+                <h2>Jeez</h2>
+            </div>
+
+        </div>
+        <div id="footer">
+
+        </div>
+    <div id="bottom-nav">
+        <a href=""><i class="material-icons">home</i><br />Home</a>
+        <a href="#about-me"><i class="material-icons">face</i><br />About me</a>
+        <a href="#projects"><i class="material-icons">view_carousel</i><br />Projects</a>
+        <a href="#contact"><i class="material-icons">mail</i><br />Contact</a>
+    </div>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('header').addClass("sticky");
+                $('#head-center').addClass("sticky");
+            } else {
+                $('header').removeClass("sticky");
+                $('#head-center').removeClass("sticky");
+            }
+        });
+
+        $(function(){
+            $(".headtext").typed({
+                strings: ["Web Designer", "Video Gamer", "Mega Geek", "Music Fanatic"],
+                typeSpeed: 25,
+                backDelay: 2000,
+                backSpeed: 50
+            });
+        });
+    </script>
+    </body>
+</html>

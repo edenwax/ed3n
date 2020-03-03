@@ -1,0 +1,298 @@
+/* dat responsive design tho
+   less than 1400px */
+@media screen and (max-width:1420px) {
+	#content-wrap, #header-wrap, header, #top-header, 
+	#bot-header, #main-wrap, #featured, #pt-wrap, #port-title, #port-contact, 
+	#proj-content, #port-content, #top-footer-wrap, #top-footer  { 
+		width: 100%; 
+	}
+	#logo {
+		margin: 0 0 0 25px;
+	}
+	#bot-header {
+    	max-width: 100%;
+   		height: auto;
+		vertical-align: bottom;
+		text-align: center;
+	}
+	#featured, #featured img {
+		width: 100% !important;
+		height: auto;
+	}
+		#featured img {
+			padding: 0 25px 0 25px;
+		}
+	#port-content {
+		margin-top: 25px;
+	}
+	#port-content ul {
+		width: 975px;
+		margin: 0 auto;
+	}
+	#port-content li {
+		margin: 0 25px 25px 25px !important;
+	}
+	#port-title h1 {
+		padding: 0 0 0 25px;
+	}
+	.tf {
+		width: 33.3%;
+		margin: 0px;
+	}
+	#tf-3 span {
+		display: none;
+	}
+	#tf-1 {
+		display: none;
+	}
+	#about-me, #skillset, #pt-about, #pt-bw, #port-scrn {
+		float: none;
+		width: 100%;
+		padding: 0 50px 50px 50px;
+	}
+		#about-me p, #pt-about p {
+			line-height: 200%;
+		}
+	#skillset ul, #pt-bw ul {
+		width: 100%;
+	}
+	#skillset li, #pt-bw li {
+		width: 100%;
+		margin: 0;
+	}
+	#skillset span {
+		margin-top: 5px;
+	}
+	#top-footer {
+		padding: 0 50px;
+	}
+	#contact-me {
+		width: 50%;
+		float: left;
+	}
+		#contact-me form {
+			width: 100%;
+			padding: 0 25px;
+		}
+			#contact-me input, #contact-me input[type=text], #contact-me textarea, #contact-me div {
+				width: 100%;
+			}
+				#contact-me textarea {
+					min-height: 400px;
+				}
+		#contact-other {
+			width: 50%;
+			float: right;
+			padding: 0 25px 0 0;
+		}
+			#social li {
+				width: 25%;
+				border-radius: 0;
+				font-size: 3ex;
+			}
+		#contact-about {
+			width: 100%;
+			padding: 50px 25px;
+		}
+	#proj-wrap, #proj-title, #port-stats {
+		width: 100%;
+	}
+	#port-stats {
+		padding: 0 50px;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	/* main site */
+	#top-header {
+		min-height: 150px;
+		height: auto;
+	}
+	#logo { 
+		float: none; 
+		width: 193px; 
+		height: 48px; 
+		background: url(../images/logo.png) no-repeat;
+		margin: 100px auto 25px auto; 
+		display: block;
+	}
+	#logo img {
+		display: none;
+	}
+	#logo a {
+		display: block;
+	}
+	#nav {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+		#nav li {
+			width: 25%;
+			text-align: center;
+		}
+			#nav li a {
+				border: none;
+				font-size: 1.5ex;
+				padding: 0;
+				margin: 0;
+				/* font-size: 4ex; */
+			}
+	#bot-header {
+
+	}
+		#bot-header h1 {
+			margin: 50px 0 0 0;
+			/* font-size: 7ex; */
+			font-weight: 300;
+		}
+		#bot-header h2 {
+			margin: 0 0 125px 0;
+
+		}
+		#bot-header h3 {
+			display: none;
+		}
+	#scrollDown {
+		display: none;
+	}
+	#about-me, #skillset, #pt-about, #pt-bw {
+		/* font-size: 3ex; */
+		padding: 0 25px 25px 25px;
+	}
+		#about-me a {
+			display: block;
+			margin: 0;
+			margin: 25px 0 0 0;
+		}
+	/* pages */
+	#pt-wrap, #port-title {
+		height: auto;
+	}
+	#port-scrn {
+		padding: 0 25px;
+	}
+	#port-title h1 {
+		text-align: center;
+		/* font-size: 6ex; */
+		font-weight: 300;
+		padding: 25px 0;
+	}
+	#port-content ul {
+		width: 325px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#port-contact {
+		height: auto;
+	}
+		#port-contact p {
+			line-height: 100%;
+			padding: 75px 25px 25px 25px;
+			/* font-size: 4ex; */
+		}
+		#port-contact a {
+			margin: 25px 0 0 0;
+			padding: 25px;
+			display: block;
+		}
+	#contact-me, #contact-other, #social {
+		width: 100%;
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+		#contact-about {
+			padding: 50px 25px;
+		}
+	#footer-wrap, #top-footer-wrap {
+		min-height: 500px;
+		height: auto;
+		margin: 0;
+	}
+	.tf {
+		display: block;
+		float: none;
+		width: 100%;
+		height: 210px;
+	}
+		.tf h3 {
+			margin: 0;
+			padding: 50px 0 0 0;
+			/* font-size: 5ex; */
+		}
+		.tf li a {
+			/* font-size: 5ex; */
+			
+		}
+	#backtotop {
+		margin-top: 50px;
+		height: 100px;
+	}
+		#backtotop span {
+			width: 100%;
+			height: 100px;
+			line-height: 80px;
+			cursor: pointer;
+			text-align: center;
+			margin: 0;
+			/* font-size: 7ex; */
+			background: #C73226;
+			color: #fff;
+			display: block;
+		}
+	#bot-footer-wrap {
+		height: auto;
+	}
+	#bot-footer-wrap {
+		font-size: 2ex;
+	}
+
+	/* my work */
+	#bot-header {
+		display: none;
+	}
+	#proj-wrap, #proj-title {
+		height: auto;
+		overflow: auto;
+	}
+		#proj-title h1 {
+			/* font-size: 3ex; */
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #7e8aa2;
+			margin: 0 0 10px 0;
+		}
+		#proj-title h2 {
+			/* font-size: 4ex; */
+		}
+		#proj-title a {
+			float: none;
+			display: block;
+			line-height: 100%;
+			margin: 0;
+			/* font-size: 5ex; */
+		}
+	.pt-stat {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 50px;
+	}
+	#port-stats {
+		padding: 0;
+	}
+	
+}
+
+@media screen and (max-width:800px) {
+	#port-contact p {
+		line-height: 100%;
+		padding-top: 40px;
+	}
+	#port-contact a {
+		margin: 25px;
+		padding: 25px;
+		display: block;
+	}
+}

@@ -1,0 +1,229 @@
+/* style.css for ed3n.me - by Colin Berry */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	/* h1 reserved, h6 reserved */
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	display: block;
+}
+#mvbg { display: none; }
+#header-wrap {
+	height: 100vh;
+	background: url(../img/treebg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+#bottom-nav {
+	display: none;
+}
+header {
+	position: fixed;
+	height: 120px;
+	line-height: 120px;
+	width: 100%;
+	transition: background .2s ease-in-out,
+				line-height .2s ease-in-out,
+				height .2s ease-in-out;
+	background: rgba(0,0,0,0);
+}
+	header.sticky {
+		height: 72px;
+		line-height: 72px;
+		background: rgba(255,255,255,1);
+		border-bottom: 1px solid #1fd660;
+	}
+		header.sticky #logo p {
+			color: #1d1d1d;
+			margin-top: 0;
+			padding: 0 40px 0 50px;
+		}
+		header.sticky nav {
+			padding: 0 40px 0 0;
+			margin: 0;
+		}
+			header.sticky nav a {
+				color: #1d1d1d;
+				margin: 0;
+				border-bottom: 2px solid rgba(0,0,0,0);
+				padding: 0 20px;
+			}
+	#logo {
+		float: left;
+	}
+		#logo p {
+			padding: 0 0 0 50px;
+			font-size: 1.4em;
+			color: #fff;
+			transition: all .2s ease-in-out;
+		}
+			#logo span {
+				font-weight: 700;
+			}
+	nav {
+		float: right;
+		padding: 0 40px 0 0;
+	}
+		nav a { /* nav alignment */
+			padding: 0px 20px;
+			display: inline-block;
+			color: #fff;
+			background: rgba(0,0,0,0);
+			text-decoration: none;
+			transition: all .1s ease-in-out;
+			border-bottom: 2px solid rgba(0,0,0,0);
+			box-shadow: inset 0 -2px 0 rgba(0,0,0,0);
+		}
+			nav a:hover {
+				border-bottom: 2px solid rgba(255,255,255,1);
+				background: rgba(0,0,0,.3);
+			}
+			header.sticky nav a:hover, 
+			header.sticky nav a:active, header.sticky nav a.active {
+				background: #1fd660;
+				border-bottom: 0px solid rgba(0,0,0,0);
+				box-shadow: inset 0 -2px 0 rgba(0,0,0,0);
+				color: #fff;
+			}
+	#head-center {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+		#head-center h1 {
+			color: #fff;
+			font-size: 3em;
+			padding: 22% 0 22% 0;
+		}
+			#head-center img {
+				opacity: 1;
+				height: 50px;
+				width: 30px;
+				margin: 0 auto;
+				transition: opacity .5s ease-in-out .5s;
+			}	
+				#head-center.sticky img {
+					opacity: 0;
+				}
+#about-me, #projects, #contact {
+	overflow: hidden;
+}
+#about-me {
+	background: #fff url(../img/about-bg.jpg) no-repeat center top;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+	#about-me h1 {
+		padding-top: 15px;
+	}
+	#about-first {
+		height: 100vh;
+		width: 30%;
+		background: #1fd660 url(../img/me.png) no-repeat center top;
+		background-size: cover;
+		float: left;
+	}
+	#about-second {
+		width: 70%;
+		float: right;
+	}
+		#about-second div {
+			max-width: 60%;
+    		padding: 80px;
+		}
+		#about-second h1 {
+			font-weight: 700;
+			color: #373737;
+		}
+			#about-second h6 {
+				color: #b0b0b0;
+			}
+		#about-second p {
+			padding: 20px 0 0 0;
+			font-size: 1em;
+			line-height: 1.6em;
+		}
+#projects {
+	background: #1d1d1d;
+	padding: 100px 0 100px 0;
+	color: #fff;
+}
+	#projects h2 {
+		font-size: 2em;
+		font-weight: 700;
+		color: #1fd660;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	#project-wrap {
+		width: 1140px;
+		margin: 0 auto;
+	}
+		.project {
+			display: block;
+			overflow: hidden;
+			margin-bottom: 100px;
+		}
+			.project p {
+				color: #d1d2d3;
+			}
+			.project-img-left {
+				float: left;
+			}
+			.project-text-right {
+				float: right;
+				width: 640px;
+			}
+			.project-text-left {
+				float: left;
+				width: 300px;
+			}
+			.project-img-right {
+				float: right;
+				width: 740px;
+			}
+	.project h1 {
+		font-weight: 700;
+		padding: 100px 0 0 0;
+	}
+		.project-thin {
+			font-weight: 300;
+		}
+#footer {
+	height: 400px;
+	display: block;
+}
+
+/* typed.js */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
